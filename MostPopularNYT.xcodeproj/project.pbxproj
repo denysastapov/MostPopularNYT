@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCD767E7630640CA80A9662E /* Pods_MostPopularNYT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B73698227B7F060357E5FA /* Pods_MostPopularNYT.framework */; };
 		D5BE42F42658F1F30096203F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE42F32658F1F30096203F /* AppDelegate.swift */; };
 		D5BE42F62658F1F30096203F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE42F52658F1F30096203F /* SceneDelegate.swift */; };
 		D5BE42F82658F1F30096203F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE42F72658F1F30096203F /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B73698227B7F060357E5FA /* Pods_MostPopularNYT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MostPopularNYT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE42F02658F1F30096203F /* MostPopularNYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MostPopularNYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE42F32658F1F30096203F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BE42F52658F1F30096203F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		D5BE42FF2658F1F40096203F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BE43022658F1F40096203F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BE43042658F1F40096203F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE2526AA44A1F11F2A2B2EF /* Pods-MostPopularNYT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostPopularNYT.release.xcconfig"; path = "Target Support Files/Pods-MostPopularNYT/Pods-MostPopularNYT.release.xcconfig"; sourceTree = "<group>"; };
+		EA0FC8DDD7695AE731FE5928 /* Pods-MostPopularNYT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostPopularNYT.debug.xcconfig"; path = "Target Support Files/Pods-MostPopularNYT/Pods-MostPopularNYT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD767E7630640CA80A9662E /* Pods_MostPopularNYT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24406DB5109C828671E54113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B73698227B7F060357E5FA /* Pods_MostPopularNYT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B04103A7A7F67960FC60D782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FC8DDD7695AE731FE5928 /* Pods-MostPopularNYT.debug.xcconfig */,
+				DCE2526AA44A1F11F2A2B2EF /* Pods-MostPopularNYT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D5BE42E72658F1F20096203F = {
 			isa = PBXGroup;
 			children = (
 				D5BE42F22658F1F30096203F /* MostPopularNYT */,
 				D5BE42F12658F1F30096203F /* Products */,
+				B04103A7A7F67960FC60D782 /* Pods */,
+				24406DB5109C828671E54113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5BE43072658F1F40096203F /* Build configuration list for PBXNativeTarget "MostPopularNYT" */;
 			buildPhases = (
+				E1FEDB35C95256CAD3E732DF /* [CP] Check Pods Manifest.lock */,
 				D5BE42EC2658F1F20096203F /* Sources */,
 				D5BE42ED2658F1F20096203F /* Frameworks */,
 				D5BE42EE2658F1F20096203F /* Resources */,
+				2F658631D6CC88D43A140BF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F658631D6CC88D43A140BF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MostPopularNYT/Pods-MostPopularNYT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MostPopularNYT/Pods-MostPopularNYT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MostPopularNYT/Pods-MostPopularNYT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1FEDB35C95256CAD3E732DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MostPopularNYT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5BE42EC2658F1F20096203F /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		D5BE43082658F1F40096203F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0FC8DDD7695AE731FE5928 /* Pods-MostPopularNYT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		D5BE43092658F1F40096203F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE2526AA44A1F11F2A2B2EF /* Pods-MostPopularNYT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
