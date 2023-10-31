@@ -302,7 +302,7 @@ public enum ServerTrustPolicy {
         let trustCreationStatus = SecTrustCreateWithCertificates(certificate, policy, &trust)
 
         if let trust = trust, trustCreationStatus == errSecSuccess {
-            publicKey = SecTrustCopyPublicKey(trust)
+            publicKey = SecTrustCopyKey(trust)
         }
 
         return publicKey

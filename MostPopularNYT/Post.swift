@@ -5,6 +5,8 @@
 //  Created by Denys Astapov on 22.05.2021.
 //
 
+// MARK: GIT!!!!!!!!!!!!!
+
 import Foundation
 
 // MARK: - Post
@@ -30,8 +32,14 @@ struct ResponseDTO: Codable {
 
 // MARK: - PostDTO
 struct PostDTO: Codable {
+    let url: String
     let title: String
     let abstract: String
+    var media: [Media]
+
+    enum CodingKeys: String, CodingKey {
+        case url, title, abstract, media
+    }
 }
 
 // MARK: - Media
