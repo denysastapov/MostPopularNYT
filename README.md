@@ -1,5 +1,6 @@
 # MostPopularNYT
-Most Popular Posts NYT
+
+![Simulator Screen Recording - iPhone 15 - 2023-12-04 at 11 01 46](https://github.com/denysastapov/MostPopularNYT/assets/38051100/0c021475-c6ca-4698-8bbf-c766369c90ed)
 
 Working version of the Most popular articles of the New Yourk Times site
 
