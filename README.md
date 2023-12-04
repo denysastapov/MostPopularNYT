@@ -20,7 +20,7 @@ The prefersLargeTitles property of the navigation bar is set to true when naviga
 
 ## Usage
 - Open the project in Xcode or your preferred iOS development environment.
-- Explore the features and functionalities provided by DolphinLogin.
+- Explore the features and functionalities provided by MostPopularNYT.
 
 ## Installation
 To run the application locally:
